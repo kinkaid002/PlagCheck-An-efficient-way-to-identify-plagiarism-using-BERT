@@ -8,8 +8,8 @@ from flask_login import login_user, login_required, logout_user, current_user
 
 auth = Blueprint('auth', __name__)
 
-access_key = 'AKIA2BIH4HLCO6DGGAG7'
-secret_access_key = 'B4Tc1Lps7DvMtVbVbru4VPovw1jd9Vb8DokQKl85'
+access_key = 'Enter Your AWS S3 bucket access key here' #Enter Your AWS S3 bucket access key here
+secret_access_key = 'Enter your AWS S3 bucket secret access key here' #Enter your AWS S3 bucket secret access key here
 
 # s3 = boto3.client('s3',
 #                     aws_access_key_id = access_key,
@@ -18,8 +18,8 @@ secret_access_key = 'B4Tc1Lps7DvMtVbVbru4VPovw1jd9Vb8DokQKl85'
 s3 = boto3.resource(
     service_name = 's3',
     region_name = 'ap-south-1',
-    aws_access_key_id = 'AKIA2BIH4HLCO6DGGAG7',
-    aws_secret_access_key = 'B4Tc1Lps7DvMtVbVbru4VPovw1jd9Vb8DokQKl85'
+    aws_access_key_id = '', #Enter Your AWS S3 bucket access key here or just use "access_key" variable defined earlier
+    aws_secret_access_key = ''  #Enter your AWS S3 bucket secret access key here or just use "secret_access_key" variable defined earlier
 )
 
 
